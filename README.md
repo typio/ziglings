@@ -27,8 +27,8 @@ or a "systems" level language such as C.
 Each exercise is self-contained and self-explained. However, you're encouraged
 to also check out these Zig language resources for more detail:
 
-* https://ziglearn.org/
-* https://ziglang.org/documentation/master/
+- https://ziglearn.org/
+- https://ziglang.org/documentation/master/
 
 Also, the [Zig community](https://github.com/ziglang/zig/wiki/Community) is incredibly friendly and helpful!
 
@@ -76,23 +76,24 @@ continue to work together. But keep in mind that if you update one, you may
 need to also update the other.
 
 Also note that the current "stage 1" Zig compiler is very strict
-about input: 
+about input:
 [no tab characters or Windows CR/LF newlines are allowed](https://github.com/ziglang/zig/issues/544).
 
 ### Version Changes
 
 Version-0.11.0-dev.1501+xxxxxxxxx
-* *2023-01-30* zig 0.11.0-dev.1501
-* *2023-01-14* zig 0.11.0-dev.1302 - changes in `@addWithOverflow` (now returns a tuple) and `@typeInfo`; temporary disabled async functionality
-* *2022-09-09* zig 0.10.0-dev.3978 - change in `NativeTargetInfo.detect` in build
-* *2022-09-06* zig 0.10.0-dev.3880 - Ex 074 correctly fails again: comptime array len
-* *2022-08-29* zig 0.10.0-dev.3685 - `@typeName()` output change, stage1 req. for async
-* *2022-07-31* zig 0.10.0-dev.3385 - std lib string `fmt()` option changes
-* *2022-03-19* zig 0.10.0-dev.1427 - method for getting sentinel of type changed
-* *2021-12-20* zig 0.9.0-dev.2025 - `c_void` is now `anyopaque`
-* *2021-06-14* zig 0.9.0-dev.137  - std.build.Id `.Custom` is now `.custom`
-* *2021-04-21* zig 0.8.0-dev.1983 - std.fmt.format() `any` format string required
-* *2021-02-12* zig 0.8.0-dev.1065 - std.fmt.format() `s` (string) format string required
+
+- _2023-01-30_ zig 0.11.0-dev.1501
+- _2023-01-14_ zig 0.11.0-dev.1302 - changes in `@addWithOverflow` (now returns a tuple) and `@typeInfo`; temporary disabled async functionality
+- _2022-09-09_ zig 0.10.0-dev.3978 - change in `NativeTargetInfo.detect` in build
+- _2022-09-06_ zig 0.10.0-dev.3880 - Ex 074 correctly fails again: comptime array len
+- _2022-08-29_ zig 0.10.0-dev.3685 - `@typeName()` output change, stage1 req. for async
+- _2022-07-31_ zig 0.10.0-dev.3385 - std lib string `fmt()` option changes
+- _2022-03-19_ zig 0.10.0-dev.1427 - method for getting sentinel of type changed
+- _2021-12-20_ zig 0.9.0-dev.2025 - `c_void` is now `anyopaque`
+- _2021-06-14_ zig 0.9.0-dev.137 - std.build.Id `.Custom` is now `.custom`
+- _2021-04-21_ zig 0.8.0-dev.1983 - std.fmt.format() `any` format string required
+- _2021-02-12_ zig 0.8.0-dev.1065 - std.fmt.format() `s` (string) format string required
 
 ## Advanced Usage
 
@@ -132,49 +133,47 @@ my mind?
 
 Core Language
 
-* [x] Hello world (main needs to be public)
-* [x] Importing standard library
-* [x] Assignment
-* [x] Arrays
-* [x] Strings
-* [x] If
-* [x] While
-* [x] For
-* [x] Functions
-* [x] Errors (error/try/catch/if-else-err)
-* [x] Defer (and errdefer)
-* [x] Switch
-* [x] Unreachable
-* [x] Enums
-* [x] Structs
-* [x] Pointers
-* [x] Optionals
-* [x] Struct methods
-* [x] Slices
-* [x] Many-item pointers
-* [x] Unions
-* [x] Numeric types (integers, floats)
-* [x] Labelled blocks and loops
-* [x] Loops as expressions
-* [x] Builtins
-* [x] Inline loops
-* [x] Comptime
-* [x] Sentinel termination
-* [x] Quoted identifiers @""
-* [x] Anonymous structs/tuples/lists
-* [ ] Async <--- IN PROGRESS!
-* [ ] Interfaces <--- IN PROGRESS!
-* [ ] Working with C
+- [x] Hello world (main needs to be public)
+- [x] Importing standard library
+- [x] Assignment
+- [x] Arrays
+- [x] Strings
+- [x] If
+- [x] While
+- [x] For
+- [x] Functions
+- [x] Errors (error/try/catch/if-else-err)
+- [x] Defer (and errdefer)
+- [x] Switch
+- [x] Unreachable
+- [x] Enums
+- [x] Structs
+- [x] Pointers
+- [x] Optionals
+- [x] Struct methods
+- [x] Slices
+- [x] Many-item pointers
+- [x] Unions
+- [x] Numeric types (integers, floats)
+- [x] Labelled blocks and loops
+- [x] Loops as expressions
+- [x] Builtins
+- [x] Inline loops
+- [x] Comptime
+- [x] Sentinel termination
+- [x] Quoted identifiers @""
+- [x] Anonymous structs/tuples/lists
+- [ ] Async <--- IN PROGRESS!
+- [ ] Interfaces <--- IN PROGRESS!
+- [ ] Working with C
 
 ## Contributing
 
 Contributions are very welcome! I'm writing this to teach myself and to create
 the learning resource I wished for. There will be tons of room for improvement:
 
-* Wording of explanations
-* Idiomatic usage of Zig
-* Maybe additional exercises?
+- Wording of explanations
+- Idiomatic usage of Zig
+- Maybe additional exercises?
 
 Please see CONTRIBUTING.md in this repo for the full details.
-
-

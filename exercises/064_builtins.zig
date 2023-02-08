@@ -40,7 +40,8 @@ pub fn main() void {
     // Check out our fancy formatting! b:0>4 means, "print
     // as a binary number, zero-pad right-aligned four digits."
     // The print() below will produce: "1101 + 0101 = 0010 (true)".
-    print("{b:0>4} + {b:0>4} = {b:0>4} ({s})", .{ a, b, my_result[0], if (my_result[1] == 1) "true" else "false" });
+    print("{b:0>4} + {b:0>4} = {b:0>4} ({s})",
+        .{ a, b, my_result[0], if (my_result[1] == 1) "true" else "false" });
 
     // Let's make sense of this answer. The value of 'b' in decimal is 5.
     // Let's add 5 to 'a' but go one by one and see where it overflows:
@@ -64,7 +65,7 @@ pub fn main() void {
     //
     // If there was no overflow at all while adding 5 to a, what value would
     // 'my_result' hold? Write the answer in into 'expected_result'.
-    const expected_result: u8 = ???;
+    const expected_result: u8 = 0b10010;
     print(". Without overflow: {b:0>8}. ", .{expected_result});
 
     print("Furthermore, ", .{});
@@ -79,6 +80,6 @@ pub fn main() void {
     // Now it's your turn. See if you can fix this attempt to use
     // this builtin to reverse the bits of a u8 integer.
     const input: u8 = 0b11110000;
-    const tupni: u8 = @bitReverse(input, tupni);
+    const tupni: u8 = @bitReverse(input);
     print("{b:0>8} backwards is {b:0>8}.\n", .{ input, tupni });
 }
